@@ -5,7 +5,13 @@ require './lib/employee'
 class EmployeeTest < Minitest::Test
 
   def setup
-    @bobbi = Employee.new({name: "Bobbi Jaeger", age: "30", salary: "100000"})
+    @bobbi = Employee.new(
+      {
+      name: "Bobbi Jaeger",
+      age: "30",
+      salary: "100000"
+      }
+    )
   end
 
   def test_it_exists
