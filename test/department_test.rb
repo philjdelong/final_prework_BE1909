@@ -1,7 +1,4 @@
-require 'minitest/autorun'
-require 'minitest/pride'
-require './lib/employee'
-require './lib/department'
+require_relative 'test_helper'
 
 class DepartmentTest < Minitest::Test
 
@@ -17,7 +14,7 @@ class DepartmentTest < Minitest::Test
     @aaron = Employee.new(
       {
         name: "Aaron Tanaka",
-        age: "25", 
+        age: "25",
         salary: "90000"
         }
       )
